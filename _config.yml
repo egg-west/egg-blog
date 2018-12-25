@@ -1,10 +1,9 @@
 author: Ethan Xu
 title: ew-blog
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   Push several information-diversed post
-baseurl: "/egg-log" # the subpath of your site, e.g. /blog
-profile_url: "http://egg-west.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: NA
+baseurl: "/egg-log"
+profile_url: "http://egg-west.github.io"
 github_username:  egg-west
 
 markdown: kramdown
@@ -13,15 +12,12 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# 
+
 exclude:
   - Gemfile
   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
