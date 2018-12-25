@@ -9,6 +9,7 @@ github_username:  egg-west
 
 markdown: kramdown
 theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 
@@ -16,9 +17,9 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # 
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
