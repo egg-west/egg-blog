@@ -1,13 +1,13 @@
 ---
 layout: post
 comments: true
-title: "Object Detection Part 4: Fast Detection Models"
+title: "CUDA Resource Management"
 date: 2018-12-27 12:00:00
 tags: object-detection object-recognition
 image: "yolo.png"
 ---
 
-> Part 4 of the "Object Detection for Dummies" series focuses on one-stage models for fast detection, including SSD, RetinaNet, and models in the YOLO family. These models skip the explicit region proposal stage but apply the detection directly on dense sampled areas.
+> Resource management is important in HPC system. One efficient tool in HPC is CUDA, in which the resource management is the key to got the best performance
 
 <!--more-->
 
