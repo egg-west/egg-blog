@@ -11,9 +11,6 @@ image: "three-generative-models.png"
 
 <!--more-->
 
-
-So far, I've written about two types of generative models, [GAN]({{ site.baseurl }}{% post_url 2017-08-20-from-GAN-to-WGAN %}) and [VAE]({{ site.baseurl }}{% post_url 2018-08-12-from-autoencoder-to-beta-vae %}). Neither of them explicitly learns the probability density function of real data, $$p(\mathbf{x})$$ (where $$\mathbf{x} \in \mathcal{D}$$) --- because it is really hard! Taking the generative model with latent variables as an example, $$p(\mathbf{x}) = \int p(\mathbf{x}\vert\mathbf{z})p(\mathbf{z})d\mathbf{z}$$ can hardly be calculated as it is intractable to go through all possible values of the latent code $$\mathbf{z}$$.
-
 Flow-based deep generative models conquer this hard problem with the help of [normalizing flows](https://arxiv.org/abs/1505.05770), a powerful statistics tool for density estimation. A good estimation of $$p(\mathbf{x})$$ makes it possible to efficiently complete many downstream tasks: sample unobserved but realistic new data points (data generation), predict the rareness of future events (density estimation), infer latent variables, fill in incomplete data samples, etc.
 
 {: class="table-of-content"}
