@@ -363,7 +363,7 @@ Let's consider an image of size $$n \times n$$, $$\mathbf{x} = \{x_1, \dots, x_{
 {: style="width: 30%;" class="center"}
 *Fig. 6. The context for generating one pixel in PixelRNN. (Image source: [Oord et al, 2016](https://arxiv.org/abs/1601.06759)*
 
-Every pixel $$x_i$$ is sampled from a probability distribution conditional over the the past context: pixels above it or on the left of it when in the same row. The definition of such context looks pretty arbitrary, because how visual [attention]({{ site.baseurl }}{% post_url 2018-06-24-attention-attention %}) is attended to an image is more flexible. Somehow magically a generative model with such a strong assumption works.
+Every pixel $$x_i$$ is sampled from a probability distribution conditional over the the past context: pixels above it or on the left of it when in the same row. The definition of such context looks pretty arbitrary, because how visual is attended to an image is more flexible. Somehow magically a generative model with such a strong assumption works.
 
 One implementation that could capture the entire context is the *Diagonal BiLSTM*. First, apply the **skewing** operation by offsetting each row of the input feature map by one position with respect to the previous row, so that computation for each row can be parallelized. Then the LSTM states are computed with respect to the current pixel and the pixels on the left.
 
@@ -472,7 +472,7 @@ Computations of the individual elements $$\tilde{x}_i$$ do not depend on each ot
 
 ## VAE + Flows
 
-In [Variational Autoencoder]({{ site.baseurl }}{% post_url 2018-08-12-from-autoencoder-to-beta-vae %}#vae-variational-autoencoder), if we want to model the posterior $$p(\mathbf{z}\vert\mathbf{x})$$ as a more complicated distribution rather than simple Gaussian. Intuitively we can use normalizing flow to transform the base Gaussian for better density approximation. The encoder then would predict a set of scale and shift terms $$(\mu_i, \sigma_i)$$ which are all functions of input $$\mathbf{x}$$. Read the [paper](https://arxiv.org/abs/1809.05861) for more details if interested.
+if we want to model the posterior $$p(\mathbf{z}\vert\mathbf{x})$$ as a more complicated distribution rather than simple Gaussian. Intuitively we can use normalizing flow to transform the base Gaussian for better density approximation. The encoder then would predict a set of scale and shift terms $$(\mu_i, \sigma_i)$$ which are all functions of input $$\mathbf{x}$$. Read the [paper](https://arxiv.org/abs/1809.05861) for more details if interested.
 
 ---
 
