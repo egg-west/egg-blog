@@ -1,7 +1,8 @@
-title: Lil'Log
-name: "Lilian's Tech Blog"
-author: Lilian Weng
-twitter_username: lilianweng
+title: Ethan's Log
+name: "Ethan's Tech Blog"
+author: Ethan Xu
+# the author of this framework is Lilian: https://lilianweng.github.io
+twitter_username: Ethan Xu
 baseurl: "/egg-blog"
 description: Document my learning notes.
 profile_url: "http://egg-west.github.io"
