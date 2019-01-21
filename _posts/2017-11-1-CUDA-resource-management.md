@@ -7,11 +7,11 @@ tags: generative-model
 image: "three-generative-models.png"
 ---
 
-> Resource management is important in HPC if you want to reach top performance. And CUDA is a popular tool for HPC.
+> I can control an army with CUDA!
 
 <!--more-->
 
-CUDA is the best way to utilize your GPUs. To  build a system, a database or a deep learning system etc, CUDA can accelerate them and save some lives.
+CUDA is the best way to utilize GPUs. For example, to  build a system, design a database or a deep learning system etc, CUDA can accelerate them and save some lives.
 
 {: class="table-of-content"}
 * TOC
@@ -23,8 +23,7 @@ CUDA is the best way to utilize your GPUs. To  build a system, a database or a d
 Here is a quick summary of the difference between GAN, VAE, and flow-based generative models:
 1. Generative adversarial networks: GAN provides a smart solution to model the data generation, an unsupervised learning problem, as a supervised one. The discriminator model learns to distinguish the real data from the fake samples that are produced by the generator model. Two models are trained as they are playing a [minimax](https://en.wikipedia.org/wiki/Minimax) game.
 2. Variational autoencoders: VAE inexplicitly optimizes the log-likelihood of the data by maximizing the evidence lower bound (ELBO).
-3. Flow-based generative models: A flow-based generative model is constructed by a sequence of invertible transformations. Unlike other two, the model explicitly learns the data distribution $$p(\mathbf{x})$$ and therefore the loss function is simply the negative log-likelihood.
-
+3. Flow-based generative models: A flow-based generative model is constructed by a sequence of invertible transformations. Unlike other two, the model explicitly learns the data distribution p(\mathbf{x}) and therefore the loss function is simply the negative log-likelihood.
 
 ![Categories of generative models]({{ '/assets/images/three-generative-models.png' | relative_url }})
 {: style="width: 100%;" class="center"}
