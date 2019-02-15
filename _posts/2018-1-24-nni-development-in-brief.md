@@ -7,7 +7,7 @@ tags: generative-model
 image: "neuromodulation_exps.jpg"
 ---
 
-> What you need to know is $O(\theta)$ and $\Omega(\theta)$, NNI will handle every other things.
+> What you need to know is $$O(\theta)$$ and $$\Omega(\theta)$$, NNI will handle every other things.
 
 <!--more-->
 
@@ -84,7 +84,7 @@ class ABCTuner(Tuner):
         return None
 ```
 
-The most simple tuner is *BatchTuner*, searching hyperparameter in an interval. Given an interval for learning rate $$r \in {x| x \in [0.0001, 0.1]}$$, *BatchTuner* would search inside. Similar, *GridSearch* is one of the most common tuner to find an optimal combination of hyperparameters. 
+The most simple tuner is *BatchTuner*, searching hyperparameter in an interval. Given an interval for learning rate $$r \in \{ x| x \in [0.0001, 0.1] \} $$, *BatchTuner* would search inside. Similar, *GridSearch* is one of the most common tuner to find an optimal combination of hyperparameters. 
 
 Except for some linear search, to satisfy exist work, hyperopt, for example, *HyperoptTuner* is implemented for lending powerful algorithm in hyperopt. hyperopt is a popular tool for hyperparameter tunning, which works well in distributed system.
 
@@ -100,7 +100,7 @@ iTuned(ref) is a parameter tuner for improve **I/O performance** for databases. 
 
 $$X^*  = argmin_{1\leq i \leq n} y(X^{(i)}) $$
 
-In which $X^*$ is the optimal parameter. We define a *improvement* $$IP(X)$$
+In which $$ X^* $$ is the optimal parameter. We define a *improvement* $$IP(X)$$
 $$
 IP(X) = y(X^*) - y(X)\ \ \  if\ y(X)<y(X^*)\\
 =0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise
