@@ -107,9 +107,19 @@ $$
 IP(X) = y(X^*) - y(X)\ \ \  if\ y(X)<y(X^*)\\
 =0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise
 $$
+But the formula shown above is not practical because the $$y(X)$$ which we can only get after the experiment on $$X$$. In this case, instead we compute $$EIP(X)$$ with SARD(Statistical Approach for Ranking Database)(ref).
+$$
+X_{next} =  argmax_{X \in DOM} EIP(X) \\
+$$
+
+$$
+EIP(X) = \int_{p=-\infin}^{p=+\infin} IP(X)pdf_{\hat{y}(X)} (p)\ dp \\
+EIP(X) = \int_{p=-\infin}^{p=y(X^*)} (y(X^*)-p)pdf_{\hat{y}(X)}(p)\ dp
+$$
 
 
-The main algorithm is listed below:
+
+ In which $pdf$ is *probability density function* of $$\hat{y}(X)$$. The main algorithm is listed below:
 
 ```
 1 Initialize based on Latin Gypercube Sampling
