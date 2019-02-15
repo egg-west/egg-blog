@@ -84,7 +84,9 @@ class ABCTuner(Tuner):
         return None
 ```
 
-The most simple tuner is *BatchTuner*, searching hyperparameter in an interval. Given an interval for learning rate $$r \in \{ x| x \in [0.0001, 0.1] \} $$, *BatchTuner* would search inside. Similar, *GridSearch* is one of the most common tuner to find an optimal combination of hyperparameters. 
+
+
+The most simple tuner is *BatchTuner*, searching hyperparameter in an interval. Given an interval for learning rate $$r \in \{ x \| x \in \[ 0.0001, 0.1 \] \} $$, *BatchTuner* would search inside. Similar, *GridSearch* is one of the most common tuner to find an optimal combination of hyperparameters. 
 
 Except for some linear search, to satisfy exist work, hyperopt, for example, *HyperoptTuner* is implemented for lending powerful algorithm in hyperopt. hyperopt is a popular tool for hyperparameter tunning, which works well in distributed system.
 
