@@ -4,8 +4,7 @@ comments: true
 title: "Neuromodulation testing"
 date: 2019-1-1 00:04:00
 tags: generative-model
-image: "neuromodulation_exps.jpg","neuromodulation_connection.jpg"
-
+image:
 ---
 
 > Another inspiration comes from neuro-science is applied on state-of-the-art problem 
