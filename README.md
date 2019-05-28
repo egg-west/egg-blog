@@ -1,2 +1,3 @@
-# Lil'Log
-Lilian's Blog
+# Linjie's blog
+
+I borrowed Lilian's framework.

@@ -147,20 +147,3 @@ $$
 [1] Auto-Keras: Efficient Neural Architecture Search with Network Morphism. Haifeng Jin et, al.
 
 [2] Tuning database configuration Parameters with iTuned, Songyun Duan et, al.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
