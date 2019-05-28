@@ -34,7 +34,7 @@ Several choices at this time:
 Our goal is to find a optimal $$q^*(\theta)$$  for $$p(\theta| y)$$ (the posterior), and one way to do this is to shorten the **distance** between $$q()$$ and $$p()$$. 
 1. Gold standard: MCMC **eventually accurate but can be slow**
 
-2. **Variational Bayes  (VB)**: $f$ is Kullback-Leibler divergence $KL(q(\cdot) || p(\cdot | y)) = q log(q/p)$, so we got
+2. **Variational Bayes  (VB)**: $f$ is Kullback-Leibler divergence $$KL(q(\cdot) || p(\cdot | y)) = q log(q/p)$$, so we got
 
    $$
    q^* = \mathop{argmin}_{q\in Q} KL(q(\cdot) || p(\cdot|y))\\
