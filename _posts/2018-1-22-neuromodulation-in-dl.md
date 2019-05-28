@@ -4,7 +4,7 @@ comments: true
 title: "Neuromodulation: A new approach for meta learning"
 date: 2019-1-1 00:04:00
 tags: generative-model
-image: "neuromodulation_exps.jpg","neuromodulation_connection.jpg"
+image:
 ---
 
 > Another inspiration comes from neuro-science is applied on state-of-the-art problem 
@@ -28,6 +28,5 @@ blank
 ## Experiments
 
 The researchers build up 3 different difficulties and type of meta-learn tasks. NMD Net is implemented in Actor-Critic algorithm. Seen from below results we can see that in all 3 tasks, NMD Net gains slightly higher reward than RNN baseline and NMD Net is far more stable. I noticed that RNN is getting more unstable through the steps, maybe it is caused by RNN's limit on its capture ability of **long-term dependence**. On the contrary, NMD Net gets more stable through the steps.
-
 
 ---
