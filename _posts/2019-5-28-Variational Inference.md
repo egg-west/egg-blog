@@ -16,7 +16,7 @@ $$
 L(\theta) = \mathop{\Pi}^{n}_{t=1} p(x_i|\theta)\\
 \max_{\theta}\ L(\theta)
 $$
-In a simple case, the $\theta$ can be solve by $$\frac{\delta\ log\ L(\theta)}{\delta \theta}$$.
+In a simple case, the $$\theta$$ can be solve by $$\frac{\delta\ log\ L(\theta)}{\delta \theta}$$.
 
 ## Variational Inference
 
@@ -29,7 +29,7 @@ Several choices at this time:
 2. compute the posterior **computational complexity: high dimension data/weights**
 3.  report a summary, e.g. posterior means and (co)variances **computational complexity**
 
-Our goal is to find a optimal $q^*(\theta)$  for $p(\theta| y)$ (the posterior), and one way to do this is to shorten the **distance** between $q()$ and $p()$. 
+Our goal is to find a optimal $$q^*(\theta)$$  for $$p(\theta| y)$$ (the posterior), and one way to do this is to shorten the **distance** between $$q()$$ and $$p()$$. 
 1. Gold standard: MCMC **eventually accurate but can be slow**
 
 2. **Variational Bayes  (VB)**: $f$ is Kullback-Leibler divergence $KL(q(\cdot) || p(\cdot | y)) = q log(q/p)$, so we got
@@ -61,7 +61,11 @@ $$
 
 ## How to solve
 
-Now, we have problem: $$q^* = \mathop{argmin}_{q\in Q_{MFVB}} KL(q || p( |y))$$ . There are solutions:
+Now, we have problem: 
+$$
+q^* = \mathop{argmin}_{q\in Q_{MFVB}} KL(q || p( |y))
+$$
+There are solutions:
 
 - Coordinate descent **(slow)**
 - Stochastic variational inference (SVI) [Hoffman et al., 2013]
