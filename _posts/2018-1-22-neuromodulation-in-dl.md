@@ -17,7 +17,6 @@ Reinforcement Learning once been denounced by training on environment it is test
 
 The solution of this paper called **Neuromodulation** as shown in fig 1 below, the top network is the controller mentioned above and this sort of connection are called **Neuromodulatory connecction.**  This is inspired by a kind of biological structure (Bargmann & Marder(2013), Marder et al.(2014) that is relative to continuous control of human, motor driving for example.
 
-![experiments results]({{ '/assets/images/neuromodulation_connection.jpg' | relative_url }})
 
 ## Meta-RL problem setting
 
@@ -30,6 +29,5 @@ blank
 
 The researchers build up 3 different difficulties and type of meta-learn tasks. NMD Net is implemented in Actor-Critic algorithm. Seen from below results we can see that in all 3 tasks, NMD Net gains slightly higher reward than RNN baseline and NMD Net is far more stable. I noticed that RNN is getting more unstable through the steps, maybe it is caused by RNN's limit on its capture ability of **long-term dependence**. On the contrary, NMD Net gets more stable through the steps.
 
-![experiments results]({{ '/assets/images/neuromodulation_exps.jpg' | relative_url }})
 
 ---
