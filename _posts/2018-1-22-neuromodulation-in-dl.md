@@ -24,8 +24,7 @@ The solution of this paper called **Neuromodulation** as shown in fig 1 below, t
 Since there is a controller now, we may have different policy in every different episode. So we got $\pi^i$ to notate the policy on $i_{th}$ episode (environment).
 
 ## Methods
-
-
+blank
 
 ## Experiments
 
@@ -33,23 +32,4 @@ The researchers build up 3 different difficulties and type of meta-learn tasks. 
 
 ![experiments results]({{ '/assets/images/neuromodulation_exps.jpg' | relative_url }})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
