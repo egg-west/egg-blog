@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Neuromodulation: A new approach for meta learning"
+title: "Neuromodulation testing"
 date: 2019-1-1 00:04:00
 tags: generative-model
 image: "neuromodulation_exps.jpg","neuromodulation_connection.jpg"
