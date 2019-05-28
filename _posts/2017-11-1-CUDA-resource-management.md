@@ -7,7 +7,7 @@ tags: generative-model
 image: "three-generative-models.png"
 ---
 
-> I can control an army with CUDA!
+> To control the army in your GPU!
 
 <!--more-->
 
