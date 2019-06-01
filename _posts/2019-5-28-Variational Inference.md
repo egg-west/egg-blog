@@ -11,21 +11,21 @@ image:
 
 <!--more-->
 ## Recap of maximum likelihood:
-There is a presumable parametralized distribution $P(x|\theta)$, and some sample $${x_i}$$. Maximum likelihood is a tool to estimate the most likely $$P(x|\theta)$$ (by ensure the $$\theta$$)
+If there is a presumable parametralized distribution $$P(x|\theta)$$, and some sample $${x_i}$$. The maximum likelihood is a tool to estimate the most likely $$P(x|\theta)$$ (by ensuring the $$\theta$$). Firstly, we define a likelyhood $$L(\theta)$$:
 
 $$
 L(\theta) = \mathop{\Pi}^{n}_{t=1} p(x_i|\theta)\\
 \max_{\theta}\ L(\theta)
 $$
 
-In a simple case, the $$\theta$$ can be solve by $$\frac{\delta\ log\ L(\theta)}{\delta \theta}$$.
+In a simple case, the $$\theta$$ can be solve by calculating the logarithmic derivative: $$\frac{\delta\ log\ L(\theta)}{\delta \theta}$$.
 
 ## Variational Inference
 
-VI is a part of Variational Bayes theory.
-**Formulation** We observed dataset(y), and weights($$\theta$$) of an approximator. $$p(\theta| y_{1:N})$$ is the **posterior** and $$p(\theta)$$ is the **prior**.  $$p(y_{1:N} | \theta)$$ is the **likelihood**. 
+VI is included in  Variational Bayes theory.
+**Formulation** We observed dataset(y) and now we wanna find a weights($$\theta$$) of an approximator. $$p(\theta| y_{1:N})$$ is the **posterior** and $$p(\theta)$$ is the **prior**.  $$p(y_{1:N} | \theta)$$ is the **likelihood**. 
 
-Several choices at this time:
+Several choices are there in this situation:
 1. build a model: choose prior & choose likelihood 
 
 2. compute the posterior **computational complexity: high dimension data/weights**
